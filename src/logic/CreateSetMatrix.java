@@ -5,11 +5,11 @@ public class CreateSetMatrix {
     private String matrixShow[][] = new String[21][21];
     private String matrixGame[][] = new String[9][9];
 
-    public CreateSetMatrix(String nombre1,String nombre2) {
+    public CreateSetMatrix() {
         startMatrixShow();
         startMatrixGame();
-        Player player1 = new Player(nombre1,true,true);
-        Player player2 = new Player(nombre2,false,false);
+        fillShowMatrix();
+
     }
 
     public void fillShowMatrix() {

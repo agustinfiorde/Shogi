@@ -8,13 +8,12 @@ public class Player {
     
     Scanner sc = new Scanner(System.in);
     private String name;
-    private String[] ejesXY = new String[2];
+    
     private boolean playerOne;
     private boolean turno;
     private ArrayList<String> piezasCapturadas = new ArrayList<String>();
 
-    public Player(String name, boolean playerOne, boolean turno) {
-        this.name = name;
+    public Player( boolean playerOne, boolean turno) {
         this.playerOne = playerOne;
         this.turno = turno;
     }
@@ -26,6 +25,14 @@ public class Player {
     
     public String[][] upgradear (String[][] matriz){
         return matriz;
+    }
+    
+    public void showPiezasCapturadas(){
+        System.out.print("Piezas capturadas por "+ name+ " : ");
+        for (String i : piezasCapturadas) {
+            System.out.print(i+". ");
+        }
+        System.out.println("");
     }
     
     public void piezasCapturadas(String pieza){
@@ -40,5 +47,39 @@ public class Player {
     public void eliminarPieza(Integer posicion){
         piezasCapturadas.remove(posicion);
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+
+    public boolean isPlayerOne() {
+        return playerOne;
+    }
+
+    public void setPlayerOne(boolean playerOne) {
+        this.playerOne = playerOne;
+    }
+
+    public boolean isTurno() {
+        return turno;
+    }
+
+    public void setTurno(boolean turno) {
+        this.turno = turno;
+    }
+
+    public ArrayList<String> getPiezasCapturadas() {
+        return piezasCapturadas;
+    }
+
+    public void setPiezasCapturadas(ArrayList<String> piezasCapturadas) {
+        this.piezasCapturadas = piezasCapturadas;
+    }
+    
     
 }
