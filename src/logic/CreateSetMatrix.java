@@ -137,4 +137,21 @@ public class CreateSetMatrix {
         }
     }
 
+    public String[][] getMatrixShow() {
+        return matrixShow;
+    }
+
+    public void setMatrixShow(String[][] matrixShow) {
+        this.matrixShow = matrixShow;
+    }
+
+    public String[][] getMatrixGame() {
+        return matrixGame;
+    }
+
+    public void setMatrixGame(String[][] matrixGame) {
+        this.matrixGame = matrixGame;
+    }
+
+    
 }
