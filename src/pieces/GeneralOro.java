@@ -34,4 +34,10 @@ public class GeneralOro {
         }
     }
 
+    public boolean movimientoGeneralOro(boolean player1, Integer xPos, Integer yPos, Integer xMov, Integer yMov) {
+        boolean puede=false;
+
+        return puede;
+    }
+
 }

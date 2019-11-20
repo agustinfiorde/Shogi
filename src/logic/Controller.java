@@ -145,12 +145,14 @@ public class Controller {
 
     }
 
-    public void mover() {
-
+    public void mover(String pieza, Integer xPos, Integer yPos, Integer xMov, Integer yMov) {
+        //argumento de pieza a mover recibirla, trabajarla aca para ver que pieza es guardarla en una variable 
+        //y usar esta variable en un Switch para ver que funcion usar para ver si el movimiento es posible o no 
+        
     }
 
     public void upgradear() {
-
+        //recibir de argumento posicion 
     }
 
     public void agregarPieza() {

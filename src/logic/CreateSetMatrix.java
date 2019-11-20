@@ -153,5 +153,4 @@ public class CreateSetMatrix {
         this.matrixGame = matrixGame;
     }
 
-    
 }
